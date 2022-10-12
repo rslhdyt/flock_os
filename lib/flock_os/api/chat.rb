@@ -15,7 +15,6 @@ module FlockOs
       def send_message(params)
         response = @client.post("#{PATH}.sendMessage", params)
         
-        binding.pry
         FlockOs::Model::SendMessage.new(response)
       end
     end
