@@ -14,14 +14,14 @@ Gem::Specification.new do |gem|
   gem.files = Dir['Rakefile', '{features,lib,spec}/**/*', 'README*', 'LICENSE*']
   gem.require_paths = %w[ lib ]
 
-  gem.add_dependency 'faraday', '1.10'
-  gem.add_dependency 'faraday_middleware', '1.2'
+  gem.add_dependency 'faraday', '~> 1.10'
+  gem.add_dependency 'faraday_middleware', '~> 1.2'
 
-  gem.add_development_dependency 'rspec'
-  gem.add_development_dependency 'webmock'
-  gem.add_development_dependency 'vcr'
-  gem.add_development_dependency 'simplecov'
-  gem.add_development_dependency 'rake'
-  gem.add_development_dependency 'bundler'
-  gem.add_development_dependency 'pry'
+  gem.add_development_dependency 'rspec', '~> 3.11.0'
+  gem.add_development_dependency 'webmock', '~> 3.18.1'
+  gem.add_development_dependency 'vcr', '~> 6.1.0'
+  gem.add_development_dependency 'simplecov', '~> 0.21'
+  gem.add_development_dependency 'rake', '~> 13.0'
+  gem.add_development_dependency 'bundler', '~> 2.2'
+  gem.add_development_dependency 'pry', '~> 0.14'
 end
