@@ -40,7 +40,7 @@ module FlockOs
           channelId: channel_id
         })
         
-        FlockOs::Collection::Channel.new(response)
+        FlockOs::Collection::ChannelMember.new(response)
       end
       
       def remove_members(channel_id, members)
