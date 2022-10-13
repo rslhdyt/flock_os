@@ -35,10 +35,8 @@ module FlockOs
         FlockOs::Collection::Channel.new(response)
       end
       
-      def list_members(channel_id)
-        response = @client.post("#{PATH}.listMembers", {
-          channelId: channel_id
-        })
+      def list_members(params)
+        response = @client.post("#{PATH}.listMembers", params)
         
         FlockOs::Collection::ChannelMember.new(response)
       end
